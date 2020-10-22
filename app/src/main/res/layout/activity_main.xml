@@ -7,40 +7,127 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonoption2"
+        android:id="@+id/buttonOption10"
         android:layout_width="102dp"
         android:layout_height="88dp"
-        android:layout_marginTop="144dp"
-        android:onClick="btnoption2"
-        android:text="Option2"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonoption1"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="288dp"
-        android:layout_height="58dp"
-        android:text="My App- Main Menu"
-        android:textSize="24sp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.135" />
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="472dp"
+        android:onClick="btnOption10"
+        android:text="@string/buttonOption10"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <Button
-        android:id="@+id/buttonoption1"
+        android:id="@+id/buttonOption9"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="468dp"
+        android:onClick="btnOption9"
+        android:text="@string/buttonOption9"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption1"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:onClick="btnOption1"
+        android:text="@string/buttonOption1"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption7"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="368dp"
+        android:onClick="btnOption7"
+        android:text="@string/buttonOption7"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption4"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="144dp"
+        android:onClick="btnOption4"
+        android:text="@string/buttonOption4"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonoption3"
         android:layout_width="102dp"
         android:layout_height="88dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="144dp"
-        android:onClick="btnoption1"
-        android:text="Option1"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:onClick="btnOption3"
+        android:text="@string/buttonOption3"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption2"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="40dp"
+        android:onClick="btnOption2"
+        android:text="@string/buttonOption2"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption8"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="368dp"
+        android:onClick="btnOption8"
+        android:text="@string/buttonOption8"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/buttonOption5"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="268dp"
+        android:onClick="btnOption5"
+        android:text="@string/buttonOption5"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="288dp"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:text="@string/textView1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOption6"
+        android:layout_width="102dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="268dp"
+        android:onClick="btnOption6"
+        android:text="@string/buttonOption6"
+        app:layout_constraintStart_toStartOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

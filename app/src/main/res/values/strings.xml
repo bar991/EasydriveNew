@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Easydrive</string>
+    <string name="textView1">My App- Main Menu</string>
+    <string name="buttonOption1">Option1</string>
+    <string name="buttonOption2">Option2</string>
+    <string name="buttonOption3">Option3</string>
+    <string name="buttonOption4">Option4 </string>
+    <string name="buttonOption5">Option5</string>
+    <string name="buttonOption6">Option6</string>
+    <string name="buttonOption7">Option7</string>
+    <string name="buttonOption8">Option8</string>
+    <string name="buttonOption9">Option9</string>
+    <string name="buttonOption10">Option10 </string>
 </resources>
