@@ -2,8 +2,69 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Loginbtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityOption1">
 
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="275dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/UserName"
+        app:layout_constraintEnd_toEndOf="@+id/signinp"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="@+id/signinp"
+        app:layout_constraintTop_toBottomOf="@+id/signinp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="237dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/Password"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="144dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Login"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <Button
+        android:id="@+id/Gotoregiesterbtn"
+        android:layout_width="243dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Gotoregiester"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signinp"
+        android:layout_width="132dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/SignInPage"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

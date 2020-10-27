@@ -11,4 +11,14 @@
     <string name="buttonOption8">Option8</string>
     <string name="buttonOption9">Option9</string>
     <string name="buttonOption10">Option10 </string>
+    <string name="Login">Login </string>
+    <string name="Gotoregiester">Do not have a user yet? Sign up now </string>
+    <string name="SignUpPage">Sign Up </string>
+    <string name="SignInPage">Sign In </string>
+    <string name="JoinED"> Join EasyDrive</string>
+    <string name="Email"> Email address:</string>
+    <string name="UserName"> Username:</string>
+    <string name="Password"> password:</string>
+    <string name="ConfirmPassword"> Confirm password:</string>
+    <string name="PhoneNumber"> Phone Number:</string>
 </resources>
