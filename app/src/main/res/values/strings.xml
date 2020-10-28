@@ -18,6 +18,15 @@
     <string name="JoinED"> Join EasyDrive</string>
     <string name="Email"> Email address:</string>
     <string name="UserName"> Username:</string>
+    <string name="QA"> Questions and Answers:</string>
+    <string name="AlertLights"> Alert lights</string>
+    <string name="Settings"> Settings</string>
+    <string name="AllowLocation"> Allow Location</string>
+    <string name="Settingsandpermissions"> Settings and Permissions</string>
+    <string name="Gasstationsorgarage"> Gas stations or garage </string>
+    <string name="Commonmalfunctions"> Common malfunctions </string>
+
+
     <string name="Password"> password:</string>
     <string name="ConfirmPassword"> Confirm password:</string>
     <string name="PhoneNumber"> Phone Number:</string>
