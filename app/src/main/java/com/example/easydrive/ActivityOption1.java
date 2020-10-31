@@ -14,7 +14,7 @@ public class ActivityOption1 extends AppCompatActivity {
         setContentView(R.layout.activity_option1);
     }
     public void gotosignUp(View view) {
-        Intent i=new Intent(this,ActivityOption10.class);
-        startActivity(i);
+        Intent il=new Intent(this,ActivityOption10.class);
+        startActivity(il);
     }
 }
