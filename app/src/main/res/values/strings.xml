@@ -25,6 +25,7 @@
     <string name="Settingsandpermissions"> Settings and Permissions</string>
     <string name="Gasstationsorgarage"> Gas stations or garage </string>
     <string name="Commonmalfunctions"> Common malfunctions </string>
+    <string name="Tp"> Types of malfunctions </string>
 
 
     <string name="Password"> password:</string>
