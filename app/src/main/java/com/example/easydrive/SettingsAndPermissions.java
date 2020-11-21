@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ActivityOption5 extends AppCompatActivity {
+public class SettingsAndPermissions extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

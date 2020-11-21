@@ -7,99 +7,33 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonOption10"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="488dp"
-        android:onClick="btnOption10"
-        android:text="@string/buttonOption10"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonOption9"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="488dp"
-        android:onClick="btnOption9"
-        android:text="@string/buttonOption9"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
         android:id="@+id/buttonOption1"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="165dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="124dp"
         android:onClick="btnOption1"
-        android:text="@string/buttonOption1"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonOption7"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="380dp"
-        android:onClick="btnOption7"
-        android:text="@string/buttonOption7"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonOption4"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="144dp"
-        android:onClick="btnOption4"
-        android:text="@string/buttonOption4"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonoption3"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="148dp"
-        android:onClick="btnOption3"
-        android:text="@string/buttonOption3"
+        android:text="@string/Sv"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <Button
         android:id="@+id/buttonOption2"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="120dp"
         android:onClick="btnOption2"
-        android:text="@string/buttonOption2"
-        app:layout_constraintStart_toStartOf="@+id/textView1"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-
-    <Button
-        android:id="@+id/buttonOption8"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="368dp"
-        android:onClick="btnOption8"
-        android:text="@string/buttonOption8"
+        android:text="@string/TM"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <Button
         android:id="@+id/buttonOption5"
-        android:layout_width="118dp"
-        android:layout_height="101dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="260dp"
+        android:layout_width="152dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="380dp"
         android:onClick="btnOption5"
         android:text="@string/Settingsandpermissions"
         app:layout_constraintStart_toStartOf="@+id/textView1"
@@ -121,12 +55,12 @@
 
     <Button
         android:id="@+id/buttonOption6"
-        android:layout_width="102dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="268dp"
+        android:layout_width="178dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="368dp"
         android:onClick="btnOption6"
-        android:text="@string/buttonOption6"
+        android:text="@string/SL"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 

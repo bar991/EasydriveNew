@@ -17,4 +17,8 @@ public class ActivityOption1 extends AppCompatActivity {
         Intent il=new Intent(this,ActivityOption10.class);
         startActivity(il);
     }
+    public void gotomainpage(View view) {
+        Intent il=new Intent(this,MainActivity.class);
+        startActivity(il);
+    }
 }

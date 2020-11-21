@@ -1,8 +1,14 @@
 <resources>
+    <string name="SL">Sharing Location</string>
+    <string name="TM">Types of malfunctions</string>
+    <string name="AL">Allow Location</string>
     <string name="app_name">Easydrive</string>
     <string name="textView1">My App- Main Menu</string>
+    <string name="Sv">Scan vehicle warning light</string>
     <string name="buttonOption1">Option1</string>
     <string name="buttonOption2">Option2</string>
+<string name="LV">Live requests for help</string>
+    <string name="LR">Live requests for help</string>
     <string name="buttonOption3">Option3</string>
     <string name="buttonOption4">Option4 </string>
     <string name="buttonOption5">Option5</string>
@@ -19,7 +25,7 @@
     <string name="Email"> Email address:</string>
     <string name="UserName"> Username:</string>
     <string name="QA"> Questions and Answers:</string>
-    <string name="AlertLights"> Alert lights</string>
+    <string name="AlertLights"> Warning lights</string>
     <string name="Settings"> Settings</string>
     <string name="AllowLocation"> Allow Location</string>
     <string name="Settingsandpermissions"> Settings and Permissions</string>

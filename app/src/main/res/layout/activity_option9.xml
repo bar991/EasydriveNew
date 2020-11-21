@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ActivityOption9">
 
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="229dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="96dp"
+        android:onClick="gotosignin"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton10"
+        app:layout_constraintStart_toStartOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:srcCompat="@drawable/signin" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="259dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="92dp"
+        android:onClick="gotosignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signup" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

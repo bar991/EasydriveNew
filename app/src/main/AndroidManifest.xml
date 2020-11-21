@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityOption1"></activity>
+        <activity android:name=".LiveRequestsActivity"></activity>
+        <activity android:name=".ShareActivity" />
+        <activity android:name=".ActivityOption1" />
         <activity android:name=".ActivityOption10" />
-        <activity android:name=".ActivityOption9" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ActivityOption8" />
         <activity android:name=".ActivityOption7" />
         <activity android:name=".ActivityOption6" />
-        <activity android:name=".ActivityOption5" />
+        <activity android:name=".SettingsAndPermissions" />
         <activity android:name=".ActivityOption4" />
         <activity android:name=".ActivityOption3" />
         <activity android:name=".ActivityOption2" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ActivityOption9">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

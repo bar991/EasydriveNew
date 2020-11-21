@@ -22,4 +22,12 @@ public class ActivityOption2 extends AppCompatActivity {
         Intent i=new Intent(this,ActivityOption7.class);
         startActivity(i);
     }
+    public void gotoscan(View view) {
+        Intent i=new Intent(this,ActivityOption8.class);
+        startActivity(i);
+    }
+    public void gotoAL(View view) {
+        Intent i=new Intent(this,ActivityOption4.class);
+        startActivity(i);
+    }
 }
