@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.easydrive">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,18 +11,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LiveRequestsActivity"></activity>
+        <activity android:name=".InformationSS"></activity>
+        <activity android:name=".InformationLS" />
+        <activity android:name=".Lighting_Symbols" />
+        <activity android:name=".Safety_Symbols" />
+        <activity android:name=".WebInfo" />
+        <activity android:name=".GasStationsActivity" />
+        <activity android:name=".ActivityScan" />
+        <activity android:name=".InformationaboutWL" />
+        <activity android:name=".MainActivitygr" />
+        <activity android:name=".LiveRequestsActivity" />
         <activity android:name=".ShareActivity" />
-        <activity android:name=".ActivityOption1" />
-        <activity android:name=".ActivityOption10" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".ActivityOption8" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".Warning_Symbols" />
         <activity android:name=".ActivityOption7" />
-        <activity android:name=".ActivityOption6" />
         <activity android:name=".SettingsAndPermissions" />
         <activity android:name=".ActivityOption4" />
         <activity android:name=".ActivityOption3" />
-        <activity android:name=".ActivityOption2" />
         <activity android:name=".ActivityOption9">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

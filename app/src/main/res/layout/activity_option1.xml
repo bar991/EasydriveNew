@@ -5,10 +5,10 @@
     android:id="@+id/Loginbtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityOption1">
+    tools:context=".SignIn">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/PersonName"
         android:layout_width="275dp"
         android:layout_height="110dp"
         android:layout_marginTop="48dp"
@@ -21,16 +21,16 @@
         app:layout_constraintTop_toBottomOf="@+id/signinp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/Password"
         android:layout_width="237dp"
         android:layout_height="97dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="@string/Password"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintEnd_toEndOf="@+id/PersonName"
+        app:layout_constraintStart_toStartOf="@+id/PersonName"
+        app:layout_constraintTop_toBottomOf="@+id/PersonName" />
 
     <Button
         android:id="@+id/loginbtn"
@@ -39,10 +39,10 @@
         android:layout_marginTop="16dp"
         android:onClick="gotomainpage"
         android:text="@string/Login"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@+id/Password"
         app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toStartOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <Button
         android:id="@+id/Gotoregiesterbtn"
