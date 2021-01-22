@@ -1,7 +1,10 @@
 package com.example.easydrive;
 
-public class WarningLights {
+import android.graphics.Bitmap;
+import android.widget.ImageView;
 
+public class WarningLights {
+    private Bitmap L;
     private String ImgWL;
     private String WLName;
     private String WLtype;
@@ -11,7 +14,11 @@ public class WarningLights {
         this.WLName = WLName;
         this.WLtype = WLtype;
     }
-
+    public WarningLights(Bitmap L, String WLName, String WLtype) {
+        this.L =L;
+        this.WLName = WLName;
+        this.WLtype = WLtype;
+    }
     public String getImgWL() {
         return ImgWL;
     }

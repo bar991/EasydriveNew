@@ -36,7 +36,7 @@ tv1= findViewById(R.id.AlertLightstext1);
         mdata.add(new Menuicon("web.png" ,"web"));
 
         mdata.add(new Menuicon("safety_icon.png" ,"Safety symbols"));
-        mdata.add(new Menuicon("warning_icon.jpg" ,"Warning symbols"));
+        mdata.add(new Menuicon("emergency.jpg" ,"Warning symbols"));
 
 
 

@@ -28,7 +28,7 @@ public class Warning_Symbols extends AppCompatActivity {
     {
 
 
-        mdata.add(new WarningLights("ambrax.jpg" ,"Brake Warning Light","Warning alert"));
+        mdata.add(new WarningLights("brake.jpg" ,"Brake Warning Light","Warning alert"));
 
         mdata.add(new WarningLights("battery_alert.jpg" ,"Battery Charge Warning Light", "Warning alert"));
         mdata.add(new WarningLights("Engine_Temperature.jpg" ,"Engine Temperature Warning Light", "Warning alert"));
