@@ -12,6 +12,7 @@ public class Menuicon {
         ImgMI = imgMI;
         this.MIName = MIName;
     }
+    public Menuicon(){}
 
 
 

@@ -33,12 +33,12 @@ TextView tv1;
 
     public void buildArrayData()
     {
-        mdata.add(new Menuicon("qr.png" ,"Scan a warning light"));
+        mdata.add(new Menuicon("cs.png" ,"Car services"));
 
         mdata.add(new Menuicon("dash_icon.webp" ,"Car dashboard symbols"));
 
-        mdata.add(new Menuicon("settings.png" ,"Settings and permissions"));
-        mdata.add(new Menuicon("location.jpg" ,"Share your location"));
+        mdata.add(new Menuicon("gs.jpg" ,"Gas stations nearby"));
+        mdata.add(new Menuicon("zz.jpg" ,"Get your location"));
 
 
 
@@ -47,9 +47,9 @@ TextView tv1;
     private AdapterView.OnItemClickListener lst1= new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-    if (mdata.get(position).getMIName().toString()=="Scan a warning light")
+    if (mdata.get(position).getMIName().toString()=="Car services")
             {
-                Intent i= new Intent(MainActivitygr.this,  ActivityScan.class);
+                Intent i= new Intent(MainActivitygr.this,  GasStationsActivity.class);
                 startActivity(i);
             }
    else if (mdata.get(position).getMIName().toString()=="Car dashboard symbols")
@@ -57,16 +57,17 @@ TextView tv1;
                 Intent i= new Intent(MainActivitygr.this,  ActivityOption4.class);
                 startActivity(i);
             }
-     else if(  mdata.get(position).getMIName().toString()=="Settings and permissions")
+
+ else if    (mdata.get(position).getMIName().toString()=="Get your location")
             {
-                Intent i= new Intent(MainActivitygr.this,  SettingsAndPermissions.class);
+                Intent i= new Intent(MainActivitygr.this,  LiveRequestsActivity.class);
                 startActivity(i);
             }
- else if    (mdata.get(position).getMIName().toString()=="Share your location")
-            {
-                Intent i= new Intent(MainActivitygr.this,  ShareActivity.class);
-                startActivity(i);
-            }
+    else
+    {
+        Intent i= new Intent(MainActivitygr.this, MapsActivity1.class);
+        startActivity(i);
+    }
         }
 
 

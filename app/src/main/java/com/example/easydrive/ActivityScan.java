@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class ActivityScan extends AppCompatActivity {
 ImageView ImageView;
     ListView lstView1;
-    ArrayWarningLight ad;
+    Array ad;
     ArrayList<WarningLights> mdata= new ArrayList<WarningLights>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ ImageView ImageView;
        // ImageView=findViewById(R.id.ImageView3);
         lstView1= findViewById(R.id.ls);
        // buildArrayData();
-        ad= new ArrayWarningLight(this,R.layout.warninglight ,mdata);
+        ad= new Array(this,R.layout.warninglight ,mdata);
         lstView1.setAdapter(ad);
         //lstView1.setOnItemClickListener(lst1);
     }
@@ -37,10 +37,10 @@ ImageView ImageView;
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if ((requestCode==100)&& (resultCode== ActivityScan.RESULT_OK));
-        { Bitmap img= (Bitmap) data.getExtras().get("data");
+        { ImageView= (ImageView) data.getExtras().get("data");
         //ImageView.setImageBitmap(img);
 
-mdata.add(new WarningLights(img, "a","b"));
+mdata.add(new WarningLights(ImageView, "a","b"));
         }}
 
 }

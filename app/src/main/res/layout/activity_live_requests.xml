@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="#FFFFFF"
     tools:context=".LiveRequestsActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="92dp"
         android:gravity="center"
+        android:hapticFeedbackEnabled="false"
         android:text="@string/LV"
         android:textColor="#F44336"
         android:textSize="30sp"
@@ -28,7 +30,7 @@
         android:layout_marginTop="84dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -40,9 +42,11 @@
         android:layout_marginTop="96dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et1" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

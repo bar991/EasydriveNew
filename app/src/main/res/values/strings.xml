@@ -7,7 +7,7 @@
     <string name="Sv">Scan vehicle warning light</string>
     <string name="buttonOption1">Option1</string>
     <string name="buttonOption2">Option2</string>
-    <string name="LV">Live requests for help</string>
+    <string name="LV">Get your location</string>
     <string name="LR">Live requests for help</string>
     <string name="buttonOption3">Option3</string>
     <string name="buttonOption4">Option4 </string>
@@ -18,6 +18,7 @@
     <string name="buttonOption9">Option9</string>
     <string name="buttonOption10">Option10 </string>
     <string name="Login">Login </string>
+    <string name="Reset">Reset </string>
     <string name="Gotoregiester">Do not have a user yet? Sign up now </string>
     <string name="SignUpPage">Sign Up </string>
     <string name="SignInPage">Sign In </string>
@@ -29,7 +30,7 @@
     <string name="Settings"> Settings</string>
     <string name="AllowLocation"> Allow Location</string>
     <string name="Settingsandpermissions"> Settings and Permissions</string>
-    <string name="Gasstationsorgarage"> Gas stations or garage </string>
+    <string name="Gasstationsorgarage"> garage stations  </string>
     <string name="Commonmalfunctions"> Common malfunctions </string>
     <string name="Tp"> Types of malfunctions </string>
 
@@ -37,4 +38,15 @@
     <string name="Password"> password:</string>
     <string name="ConfirmPassword"> Confirm password:</string>
     <string name="PhoneNumber"> Phone Number:</string>
+    <string name="title_activity_maps1">Map</string>
+    <string name="title_activity_web">WebActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_maps2">Map</string>
 </resources>

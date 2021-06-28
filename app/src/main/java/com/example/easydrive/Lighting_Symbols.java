@@ -47,26 +47,26 @@ public class Lighting_Symbols extends AppCompatActivity {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View v, int position, long l) {
 
-            if (mdata1.get(position).getWLName()=="Headlight Range Control")
+            if (mdata1.get(position).getWLName().equals("Headlight Range Control"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light turns on if there is an issue detected with the headlight range control system.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="High Beam Light Indicator")
+            if (mdata1.get(position).getWLName().equals("High Beam Light Indicator"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light means your car’s high beam headlights are on, or if the high beam flash function is used.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Lamp Out")
+            if (mdata1.get(position).getWLName().equals("Lamp Out"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light means that there is an exterior light on the vehicle that is not functioning properly.");
                 startActivity(i);
             }
 
-            if (mdata1.get(position).getWLName()=="Low Beam Indicator Light")
+            if (mdata1.get(position).getWLName().equals("Low Beam Indicator Light"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light means that the vehicles dipped beam is on.");
@@ -76,37 +76,37 @@ public class Lighting_Symbols extends AppCompatActivity {
 
 
             }
-            if (mdata1.get(position).getWLName()=="Adaptive light system")
+            if (mdata1.get(position).getWLName().equals("Adaptive light system"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light will lit when adaptive headlights are turned on.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Exterior Light Fault")
+            if (mdata1.get(position).getWLName().equals("Exterior Light Fault"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light means any exterior light on your car isn’t working.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Front Fog Lights")
+            if (mdata1.get(position).getWLName().equals("Front Fog Lights"))
             {
                 Intent i= new Intent(Lighting_Symbols.this, InformationLS.class);
                 i.putExtra("key2","Indicator light means front fog lights are turned on.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Rain and Light sensor")
+            if (mdata1.get(position).getWLName().equals("Rain and Light sensor"))
             {
                 Intent i= new Intent(Lighting_Symbols.this, InformationLS.class);
                 i.putExtra("key2","Indicator light means there is an issue with the sensor system. The wipers and lights will not function automatically");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Rear Fog Lights")
+            if (mdata1.get(position).getWLName().equals("Rear Fog Lights"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light means rear fog lights are on.");
                 startActivity(i);
             }
-            if (mdata1.get(position).getWLName()=="Side Light Indicator")
+            if (mdata1.get(position).getWLName().equals("Side Light Indicator"))
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light will turn on when the normal headlights are in use.");

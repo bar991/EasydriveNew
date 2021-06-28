@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -23,7 +24,10 @@ public class ActivityOption4 extends AppCompatActivity {
         gv= findViewById(R.id.gridview2);
 tv1= findViewById(R.id.AlertLightstext1);
        buildArrayData();
-       ad= new ArrayMenuIcon(this,R.layout.menuicon, mdata);
+
+      // Dal Dal=new Dal(this);
+        //mdata= Dal.getAllMenuicon();
+       ad= new ArrayMenuIcon(this,R.layout.menuicon,mdata);
        gv.setAdapter(ad);
         gv.setOnItemClickListener(lst1);
     }
@@ -31,11 +35,11 @@ tv1= findViewById(R.id.AlertLightstext1);
 
     public void buildArrayData()
     {
-        mdata.add(new Menuicon("lightning_icon.png" ,"Lighting symbols"));
+        mdata.add(new Menuicon("light.png" ,"Lighting symbols"));
 
         mdata.add(new Menuicon("web.png" ,"web"));
 
-        mdata.add(new Menuicon("safety_icon.png" ,"Safety symbols"));
+        mdata.add(new Menuicon("22.jpeg" ,"Safety symbols"));
         mdata.add(new Menuicon("emergency.jpg" ,"Warning symbols"));
 
 
@@ -45,6 +49,7 @@ tv1= findViewById(R.id.AlertLightstext1);
     private AdapterView.OnItemClickListener lst1= new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+
             if (mdata.get(position).getMIName().toString()=="Warning symbols")
             {
                 Intent i= new Intent(ActivityOption4.this,  Warning_Symbols.class);
@@ -62,7 +67,7 @@ tv1= findViewById(R.id.AlertLightstext1);
             }
             if  (mdata.get(position).getMIName().toString()=="web")
             {
-                Intent i= new Intent(ActivityOption4.this,  WebInfo.class);
+                Intent i= new Intent(ActivityOption4.this,  WebActivity.class);
                 startActivity(i);
             }
 

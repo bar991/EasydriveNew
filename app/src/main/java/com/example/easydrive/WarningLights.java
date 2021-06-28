@@ -4,21 +4,33 @@ import android.graphics.Bitmap;
 import android.widget.ImageView;
 
 public class WarningLights {
-    private Bitmap L;
+    private ImageView L;
     private String ImgWL;
     private String WLName;
     private String WLtype;
-
+    private String Adress;
+    public WarningLights(String imgWL, String WLName, String WLtype, String Adress) {
+        this.ImgWL = imgWL;
+        this.WLName = WLName;
+        this.WLtype = WLtype;
+        this.Adress= Adress;
+    }
     public WarningLights(String imgWL, String WLName, String WLtype) {
         this.ImgWL = imgWL;
         this.WLName = WLName;
         this.WLtype = WLtype;
     }
-    public WarningLights(Bitmap L, String WLName, String WLtype) {
+    public WarningLights(){}
+    public WarningLights(ImageView L, String WLName, String WLtype) {
         this.L =L;
         this.WLName = WLName;
         this.WLtype = WLtype;
     }
+
+    public ImageView getL() {
+        return L;
+    }
+
     public String getImgWL() {
         return ImgWL;
     }

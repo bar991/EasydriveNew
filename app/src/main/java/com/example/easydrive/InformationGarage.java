@@ -7,22 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class InformationaboutWL extends AppCompatActivity {
-TextView tv;
+public class InformationGarage extends AppCompatActivity {
+    TextView tv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_informationabout_w_l);
-        tv=findViewById(R.id.textinfoWL);
-        Intent i= getIntent();
-        String x=i.getExtras().getString("key1");
-        tv.setText(x);
+        setContentView(R.layout.activity_information_garage);
 
-     //   checkWhoIs();
+        tv =findViewById(R.id.textinfoWL1);
+        Intent i= getIntent();
+        String x=i.getExtras().getString("key2");
+        tv.setText(x);
     }
-    public void btn2click(View view) { Intent i=new Intent(this, Warning_Symbols.class);
+
+    public void btn2click(View view) {
+        Intent i=new Intent(this,GasStationsActivity.class);
         startActivity(i);
     }
-
-
 }
