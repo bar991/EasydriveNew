@@ -32,7 +32,6 @@ public class MapsActivity1 extends FragmentActivity implements OnMapReadyCallbac
     LocationManager lm1;
     double Longtiude;
     double Lattitude;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +65,7 @@ public class MapsActivity1 extends FragmentActivity implements OnMapReadyCallbac
 
         // Add a marker in Sydney and move the camera
        LatLng Haifa = new LatLng(32.794044, 34.989571);
-      mMap.addMarker(new MarkerOptions().position(Haifa).title("Marker in Haifa"));
+      mMap.addMarker(new MarkerOptions().position(Haifa).title("תחנת דלק מיקה\n"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Haifa));
         LatLng gas1 = new LatLng(32.831764781655785, 35.061753644946954);
         mMap.addMarker(new MarkerOptions().position(gas1).title("תחנת דלק קרית חיים\n"));

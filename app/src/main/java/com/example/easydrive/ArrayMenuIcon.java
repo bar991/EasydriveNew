@@ -32,7 +32,6 @@ public class ArrayMenuIcon extends ArrayAdapter<Menuicon> {
     public int getCount() {
         return    this.ary.size();
     }
-
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

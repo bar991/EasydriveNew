@@ -13,7 +13,6 @@ public class SignUp extends AppCompatActivity {
     EditText Password;
     EditText email;
     EditText phoneNum;
-    byte[] userArray;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +23,16 @@ public class SignUp extends AppCompatActivity {
         phoneNum=findViewById(R.id.editTextPhone);
     }
     public void gotologinpage(View view) {
+        String usr;
+        String pas;
+
+        usr = name.getText().toString();
+        pas = Password.getText().toString();
+        if (usr.equals("")) {
+            Toast.makeText(SignUp.this, "Username can't be Blank", Toast.LENGTH_LONG).show();
+        } else if (pas.equals("")) {
+            Toast.makeText(SignUp.this, "Password can't be Blank", Toast.LENGTH_LONG).show();
+        } else
 
         {Dal dal= new Dal(SignUp.this);
         dal.addUser(
@@ -39,14 +48,14 @@ public class SignUp extends AppCompatActivity {
 
 
     }
-    public int shtrudelcountandplace(String st) {
-
-        if (st.indexOf('@') ==0 || st.indexOf('@')==st.length()-1)
-            return -1;
-        else if (st.lastIndexOf('@') != st.indexOf('@') ||st.indexOf('@')==-1)
-            return 0;
-        else return 1;
-    }
-
+//    public int shtrudelcountandplace(String st) {
+//
+//        if (st.indexOf('@') ==0 || st.indexOf('@')==st.length()-1)
+//            return -1;
+//        else if (st.lastIndexOf('@') != st.indexOf('@') ||st.indexOf('@')==-1)
+//            return 0;
+//        else return 1;
+//    }
+//
 
 }

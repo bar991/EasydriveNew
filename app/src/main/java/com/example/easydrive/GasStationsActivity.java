@@ -21,22 +21,26 @@ public class GasStationsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_garage_stations);
         lstView3 = findViewById(R.id.listViewGas);
-        buildArrayData();
+        Dal dal = new Dal(this);
+        if(!dal.Checkgarageempty()){
+            dal.addgarage("hf.jpg", "Hafniex Insurance Company", "Insurance Company");
+            dal.addgarage("lock.jpg", "Car locksmith", "Car locksmith");
+            dal.addgarage("grr.png", "Towing and Rescue Ltd.", "Towing and rescue services");
+            dal.addgarage("puncture.jpg", "puncture haifa", "puncture");
+            dal.addgarage("color.png", "Tin and paint haifa", "Tin and paint");
+            dal.addgarage("emgine.jpeg", "Engine care garage", "emgine");
+        }
+
+
+        mdata1 = dal.getAllgarage();
+//
+//      buildArrayData();
         ad = new ArrayWarningLight(this, R.layout.warninglight, mdata1);
         lstView3.setAdapter(ad);
         lstView3.setOnItemClickListener(lst1);
     }
 
-    public void buildArrayData() {
 
-        mdata1.add(new WarningLights("hf.jpg", "Hafniex Insurance Company", "Insurance Company"));
-
-        mdata1.add(new WarningLights("lock.jpg", "Car locksmith", "Car locksmith"));
-        mdata1.add(new WarningLights("grr.png", "Towing and Rescue Ltd.", "Towing and rescue services"));
-        mdata1.add(new WarningLights("puncture.jpg", "puncture haifa", "puncture"));
-        mdata1.add(new WarningLights("color.png", "Tin and paint haifa", "Tin and paint"));
-        mdata1.add(new WarningLights("emgine.jpeg", "Engine care garage", "emgine"));
-    }
 
     private AdapterView.OnItemClickListener lst1 = new AdapterView.OnItemClickListener() {
         @Override
@@ -64,11 +68,24 @@ public class GasStationsActivity extends AppCompatActivity {
 //                i.putExtra("key2", "0584121202");
                startActivity(callIntent);
             }
-//            if (mdata1.get(position).getWLName().equals("Engine care garage"))
-//            {
-//                Intent i= new Intent(GasStationsActivity.this, MapsActivity2.class);
-//                startActivity(i);
-//            }
+            if (mdata1.get(position).getWLName().equals("puncture haifa"))
+            {
+                Intent i= new Intent(GasStationsActivity.this, InformationGarage.class);
+                i.putExtra("key2", "Meital Garage, hitman 27, Kiryat Motzkin:0584123321");
+                startActivity(i);
+            }
+            if (mdata1.get(position).getWLName().equals("Tin and paint haifa"))
+            {
+                Intent i= new Intent(GasStationsActivity.this, InformationGarage.class);
+                i.putExtra("key2", "Idan Garage, bar yehuda 111,Nesher:0506508333");
+                startActivity(i);
+            }
+            if (mdata1.get(position).getWLName().equals("Engine care garage"))
+            {
+                Intent i= new Intent(GasStationsActivity.this, InformationGarage.class);
+                i.putExtra("key2", "Meital Garage, hahashmal 27, Haifa:0584121202");
+                startActivity(i);
+            }
 
 
 

@@ -25,8 +25,7 @@ public class ActivityOption4 extends AppCompatActivity {
 tv1= findViewById(R.id.AlertLightstext1);
        buildArrayData();
 
-      // Dal Dal=new Dal(this);
-        //mdata= Dal.getAllMenuicon();
+
        ad= new ArrayMenuIcon(this,R.layout.menuicon,mdata);
        gv.setAdapter(ad);
         gv.setOnItemClickListener(lst1);
@@ -37,10 +36,10 @@ tv1= findViewById(R.id.AlertLightstext1);
     {
         mdata.add(new Menuicon("light.png" ,"Lighting symbols"));
 
-        mdata.add(new Menuicon("web.png" ,"web"));
+        mdata.add(new Menuicon("goweb.jpg" ,"web"));
 
-        mdata.add(new Menuicon("22.jpeg" ,"Safety symbols"));
-        mdata.add(new Menuicon("emergency.jpg" ,"Warning symbols"));
+        mdata.add(new Menuicon("yellow1alert.png" ,"Safety symbols"));
+        mdata.add(new Menuicon("redalert.jpg" ,"Warning symbols"));
 
 
 
@@ -50,22 +49,22 @@ tv1= findViewById(R.id.AlertLightstext1);
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
 
-            if (mdata.get(position).getMIName().toString()=="Warning symbols")
+            if (mdata.get(position).getMIName().equals("Warning symbols"))
             {
                 Intent i= new Intent(ActivityOption4.this,  Warning_Symbols.class);
                 startActivity(i);
             }
-            if (mdata.get(position).getMIName().toString()=="Safety symbols")
+            if (mdata.get(position).getMIName().equals("Safety symbols"))
             {
                 Intent i= new Intent(ActivityOption4.this,  Safety_Symbols.class);
                 startActivity(i);
             }
-            if (mdata.get(position).getMIName().toString()=="Lighting symbols")
+            if (mdata.get(position).getMIName().equals("Lighting symbols"))
             {
                 Intent i= new Intent(ActivityOption4.this,  Lighting_Symbols.class);
                 startActivity(i);
             }
-            if  (mdata.get(position).getMIName().toString()=="web")
+            if  (mdata.get(position).getMIName().equals("web"))
             {
                 Intent i= new Intent(ActivityOption4.this,  WebActivity.class);
                 startActivity(i);

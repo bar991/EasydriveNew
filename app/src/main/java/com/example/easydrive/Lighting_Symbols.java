@@ -19,30 +19,46 @@ public class Lighting_Symbols extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lighting__symbols);
         lstView3= findViewById(R.id.listview4);
-        buildArrayData();
+        Dal dal= new Dal(this);
+        if(!dal.Checkdetail3sempty()){
+       dal.addwarningalert("Adaptive_Light.png" ,"Adaptive light system","Lighting symbols");
+       dal.addwarningalert("Exterior_light.jpg" ,"Exterior Light Fault","Lighting symbols");
+       dal.addwarningalert("fog2_light.png" ,"Front Fog Lights","Lighting symbols");
+       dal.addwarningalert("Fog3_light.jpg" ,"Fog Lamp Indicator","Lighting symbols");
+
+       dal.addwarningalert("headlight_light.png" ,"Headlight Range Control","Lighting symbols");
+       dal.addwarningalert("highBeam_light.jpg" ,"High Beam Light Indicator","Lighting symbols");
+       dal.addwarningalert("LampOut.jpg" ,"Lamp Out","Lighting symbols");
+       dal.addwarningalert("LowBeam_light.jpg" ,"Low Beam Indicator Light","Lighting symbols");
+       dal.addwarningalert("rain_light.gng" ,"Rain and Light sensor","Lighting symbols");
+
+       dal.addwarningalert("Rear_light.jpg" ,"Rear Fog Lights","Lighting symbols");
+       dal.addwarningalert("side_light.jpg" ,"Side Light Indicator","Lighting symbols");}
+      //  buildArrayData();
+        mdata1=dal.getAlllightning();
         ad= new ArrayWarningLight(this,R.layout.warninglight ,mdata1);
         lstView3.setAdapter(ad);
         lstView3.setOnItemClickListener(lst1);
     }
-    public void buildArrayData()
-    {
-
-        mdata1.add(new WarningLights("Adaptive_Light.png" ,"Adaptive light system","Lighting symbols"));
-        mdata1.add(new WarningLights("Exterior_light.jpg" ,"Exterior Light Fault","Lighting symbols"));
-        mdata1.add(new WarningLights("fog2_light.png" ,"Front Fog Lights","Lighting symbols"));
-        mdata1.add(new WarningLights("Fog3_light.jpg" ,"Fog Lamp Indicator","Lighting symbols"));
-        mdata1.add(new WarningLights("fog_lamp.jpg" ,"Low Fuel Indicator","Lighting symbols"));
-
-        mdata1.add(new WarningLights("headlight_light.png" ,"Headlight Range Control","Lighting symbols"));
-        mdata1.add(new WarningLights("highBeam_light.jpg" ,"High Beam Light Indicator","Lighting symbols"));
-        mdata1.add(new WarningLights("LampOut.jpg" ,"Lamp Out","Lighting symbols"));
-        mdata1.add(new WarningLights("LowBeam_light.jpg" ,"Low Beam Indicator Light","Lighting symbols"));
-        mdata1.add(new WarningLights("rain_light.gng" ,"Rain and Light sensor","Lighting symbols"));
-
-        mdata1.add(new WarningLights("Rear_light.jpg" ,"Rear Fog Lights","Lighting symbols"));
-        mdata1.add(new WarningLights("side_light.jpg" ,"Side Light Indicator","Lighting symbols"));
-
-    }
+//    my process
+//    public void buildArrayData()
+//    {
+//
+//        mdata1.add(new WarningLights("Adaptive_Light.png" ,"Adaptive light system","Lighting symbols"));
+//        mdata1.add(new WarningLights("Exterior_light.jpg" ,"Exterior Light Fault","Lighting symbols"));
+//        mdata1.add(new WarningLights("fog2_light.png" ,"Front Fog Lights","Lighting symbols"));
+//        mdata1.add(new WarningLights("Fog3_light.jpg" ,"Fog Lamp Indicator","Lighting symbols"));
+//
+//        mdata1.add(new WarningLights("headlight_light.png" ,"Headlight Range Control","Lighting symbols"));
+//        mdata1.add(new WarningLights("highBeam_light.jpg" ,"High Beam Light Indicator","Lighting symbols"));
+//        mdata1.add(new WarningLights("LampOut.jpg" ,"Lamp Out","Lighting symbols"));
+//        mdata1.add(new WarningLights("LowBeam_light.jpg" ,"Low Beam Indicator Light","Lighting symbols"));
+//        mdata1.add(new WarningLights("rain_light.gng" ,"Rain and Light sensor","Lighting symbols"));
+//
+//        mdata1.add(new WarningLights("Rear_light.jpg" ,"Rear Fog Lights","Lighting symbols"));
+//        mdata1.add(new WarningLights("side_light.jpg" ,"Side Light Indicator","Lighting symbols"));
+//
+//    }
     private AdapterView.OnItemClickListener lst1= new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View v, int position, long l) {
@@ -110,6 +126,12 @@ public class Lighting_Symbols extends AppCompatActivity {
             {
                 Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
                 i.putExtra("key2","Indicator light will turn on when the normal headlights are in use.");
+                startActivity(i);
+            }
+            if (mdata1.get(position).getWLName().equals("Fog Lamp Indicator"))
+            {
+                Intent i= new Intent(Lighting_Symbols.this,  InformationLS.class);
+                i.putExtra("key2","Some vehicles have rear fog lights in which case there are two lights on the dash, one for each direction. The indicator for the front lights is usually light green in color and faces towards the left, just like the headlight indicatort.");
                 startActivity(i);
             }
         }

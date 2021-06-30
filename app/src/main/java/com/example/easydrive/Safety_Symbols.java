@@ -19,43 +19,33 @@ public class Safety_Symbols extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_warning__alert);
         lstView3= findViewById(R.id.listview3);
-     buildArrayData();
+//     buildArrayData();
+//
+    Dal dal= new Dal(Safety_Symbols.this);
+        if(!dal.Checkdetail2sempty()){
+       dal.addwarningalert("air.jpg" ,"Tire Pressure Warning Light","Safety alert");
+            dal.addwarningalert("engine.jpg" ,"Check Engine or Malfunction Indicator Light","Safety alert");
+        dal.addwarningalert("ABS.jpg" ,"Anti-lock Brake Warning Light","Safety alert");
+        dal.addwarningalert("fuel.jpg" ,"Low Fuel Indicator","Safety alert");
+        dal.addwarningalert("brake_fluid.jpg" ,"Brake Fluid","Safety alert");
+        dal.addwarningalert("brake_pedal.jpg" ,"Engine Warning","Safety alert");
+        dal.addwarningalert("esp.jpg" ,"ESP Fault/Traction Control Malfunction","Safety alert");
+        dal.addwarningalert("security_alert.jpg" ,"Security alert","Safety alert");
+        dal.addwarningalert("parking_brake.jpg" ,"Parking Brake Light","Safety alert");
+        dal.addwarningalert("service.jpg" ,"Service Vehicle soon","Safety alert");
+        dal.addwarningalert("side_airbag.jpg" ,"Side airbag","Safety alert");
+        dal.addwarningalert("seat.jpg" ,"Seat Belt Reminder","Safety alert");
+        dal.addwarningalert("temp.jpg" ,"Transmission Temperature","Safety alert");
+        dal.addwarningalert("wheel.jpg" ,"Steering Wheel Lock","Safety alert");
+        dal.addwarningalert("trailer.jpg" ,"Trailer Tow Hitch Warning","Safety alert");
+        dal.addwarningalert("control.jpg" ,"Traction Control Light","Safety alert");}
 
-//        Dal dal= new Dal(Safety_Symbols.this);
-//       int cnt= dal.getcnt();
-//       if (cnt==0){
-//          dal.addwarningalert("brake.jpg","brake.jpg","Warning alert");
-//          dal.addwarningalert("battery_alert.jpg" ,"Battery Charge Warning Light", "Warning alert");
-//          dal.addwarningalert("Engine_Temperature.jpg" ,"Engine Temperature Warning Light", "Warning alert");
-//          dal.addwarningalert("Oil_Pressure.jpg" ,"Oil Pressure Warning Light"
-//                  ,"Warning alert");}
-//          mdata1=dal.getAllalert();
+        mdata1=dal.getAlllsafety();
         ad= new ArrayWarningLight(this,R.layout.warninglight ,mdata1);
         lstView3.setAdapter(ad);
         lstView3.setOnItemClickListener(lst1);
     }
-    public void buildArrayData()
-    {
 
-        mdata1.add(new WarningLights("air.jpg" ,"Tire Pressure Warning Light","Warning alert"));
-        mdata1.add(new WarningLights("engine.jpg" ,"Check Engine or Malfunction Indicator Light","Warning alert"));
-        mdata1.add(new WarningLights("ABS.jpg" ,"Anti-lock Brake Warning Light","Warning alert"));
-        mdata1.add(new WarningLights("fuel.jpg" ,"Low Fuel Indicator","Warning alert"));
-        mdata1.add(new WarningLights("brake_fluid.jpg" ,"Brake Fluid","Warning alert"));
-        mdata1.add(new WarningLights("brake_pedal.jpg" ,"Engine Warning","Warning alert"));
-        mdata1.add(new WarningLights("esp.jpg" ,"ESP Fault/Traction Control Malfunction","Warning alert"));
-        mdata1.add(new WarningLights("parking_brake.jpg" ,"Parking Brake Light","Warning alert"));
-        mdata1.add(new WarningLights("service.jpg" ,"Service Vehicle soon","Warning alert"));
-        mdata1.add(new WarningLights("security_alert.jpg" ,"Security alert","Warning alert"));
-        mdata1.add(new WarningLights("side_airbag.jpg" ,"Side airbag","Warning alert"));
-        mdata1.add(new WarningLights("seat.jpg" ,"Seat Belt Reminder","Warning alert"));
-        mdata1.add(new WarningLights("temp.jpg" ,"Transmission Temperature","Warning alert"));
-        mdata1.add(new WarningLights("wheel.jpg" ,"Steering Wheel Lock","Warning alert"));
-        mdata1.add(new WarningLights("trailer.jpg" ,"Trailer Tow Hitch Warning","Warning alert"));
-        mdata1.add(new WarningLights("control.jpg" ,"Traction Control Light","Warning alert"));
-
-
-    }
     private AdapterView.OnItemClickListener lst1= new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View v, int position, long l) {

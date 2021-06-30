@@ -21,44 +21,36 @@ TextView tv1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activitygr);
-       // tv1=findViewById(R.id.);
         gv= findViewById(R.id.gridview1);
-
-        buildArrayData();
+       Dal dal=new Dal(this);
+        if(!dal.Checkmenuempty()){
+        dal.addMenuicon("cs.png" ,"Car services");
+        dal.addMenuicon("dash_icon.webp" ,"Car dashboard symbols");
+        dal.addMenuicon("gs.jpg" ,"Gas stations nearby");
+        dal.addMenuicon("zz.jpg" ,"Get your location");}
+mdata=dal.getAllMenuicon();
+        //buildArrayData();
         ad= new ArrayMenuIcon(this,R.layout.menuicon ,mdata);
        gv.setAdapter(ad);
         gv.setOnItemClickListener(lst1);
-    }
-
-
-    public void buildArrayData()
-    {
-        mdata.add(new Menuicon("cs.png" ,"Car services"));
-
-        mdata.add(new Menuicon("dash_icon.webp" ,"Car dashboard symbols"));
-
-        mdata.add(new Menuicon("gs.jpg" ,"Gas stations nearby"));
-        mdata.add(new Menuicon("zz.jpg" ,"Get your location"));
-
-
-
 
     }
+
     private AdapterView.OnItemClickListener lst1= new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-    if (mdata.get(position).getMIName().toString()=="Car services")
+    if (mdata.get(position).getMIName().equals("Car services"))
             {
                 Intent i= new Intent(MainActivitygr.this,  GasStationsActivity.class);
                 startActivity(i);
             }
-   else if (mdata.get(position).getMIName().toString()=="Car dashboard symbols")
+   else if (mdata.get(position).getMIName().equals("Car dashboard symbols"))
             {
                 Intent i= new Intent(MainActivitygr.this,  ActivityOption4.class);
                 startActivity(i);
             }
 
- else if    (mdata.get(position).getMIName().toString()=="Get your location")
+ else if    (mdata.get(position).getMIName().equals("Get your location"))
             {
                 Intent i= new Intent(MainActivitygr.this,  LiveRequestsActivity.class);
                 startActivity(i);

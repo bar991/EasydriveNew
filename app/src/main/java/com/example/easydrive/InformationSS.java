@@ -18,7 +18,6 @@ TextView tv;
         String x=i.getExtras().getString("key2");
         tv.setText(x);
 
-        //   checkWhoIs();
     }
     public void btn2click(View view) { Intent i=new Intent(this, Safety_Symbols.class);
         startActivity(i);

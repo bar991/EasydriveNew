@@ -46,7 +46,6 @@
         <activity
             android:name=".MapsActivity1"
             android:label="@string/title_activity_maps1" />
-        <activity android:name=".QA_Adapter" />
         <activity android:name=".InformationSS" />
         <activity android:name=".InformationLS" />
         <activity android:name=".Lighting_Symbols" />

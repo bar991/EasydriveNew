@@ -16,49 +16,29 @@ public class Warning_Symbols extends AppCompatActivity {
   //  int cnt=0;
     ArrayWarningLight ad;
     ArrayList<WarningLights> mdata1= new ArrayList<WarningLights>();
-
+    ArrayList<WarningLights> mdata2= new ArrayList<WarningLights>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.warning_symbols);
         lstView1 = findViewById(R.id.listview1);
+        Dal dal = new Dal(this);
 
-//        int cnt=dal.jjj()
-//if (cnt==0){
-//    dal.updatejjj()
-//
-//    Toast.makeText(this, ""+cnt, Toast.LENGTH_SHORT).show();
-//        Dal dal = new Dal(Warning_Symbols.this);
-//        dal.addwarningalert("brake.jpg", "Brake Warning Light", "Warning alert");
-//        dal.addwarningalert("battery_alert.jpg", "Battery Charge Warning Light", "Warning alert");
-//        dal.addwarningalert("Engine_Temperature.jpg", "Engine Temperature Warning Light", "Warning alert");
-//        dal.addwarningalert("Oil_Pressure.jpg", "Oil Pressure Warning Light"
-//                , "Warning alert");
-//        mdata1 = dal.getAllalert();
-//        ad = new ArrayWarningLight(this, R.layout.warninglight, mdata1);
-//    lstView1.setAdapter(ad);
-//    lstView1.setOnItemClickListener(Lst1);cnt++;}
+        if(!dal.Checkdetail1sempty()){
+        dal.addwarningalert("brake.jpg", "Brake Warning Light", "Warning alert");
+        dal.addwarningalert("battery_alert.jpg", "Battery Charge Warning Light", "Warning alert");
+        dal.addwarningalert("Engine_Temperature.jpg", "Engine Temperature Warning Light", "Warning alert");
+        dal.addwarningalert("Oil_Pressure.jpg", "Oil Pressure Warning Light"
+                , "Warning alert");}
+       mdata1 = dal.getAllalert();
 
-      buildArrayData();
 
-        ad= new ArrayWarningLight(this,R.layout.warninglight ,mdata1);
+// buildArrayData();
+
+     ad= new ArrayWarningLight(this,R.layout.warninglight ,mdata1);
         lstView1.setAdapter(ad);
         lstView1.setOnItemClickListener(lst1);
     }
-    public void buildArrayData()
-    {
-
-        mdata1.add(new WarningLights("brake.jpg","Brake Warning Light","Warning alert"));
-        mdata1.add(new WarningLights("battery_alert.jpg" ,"Battery Charge Warning Light", "Warning alert"));
-        mdata1.add(new WarningLights("Engine_Temperature.jpg" ,"Engine Temperature Warning Light", "Warning alert"));
-        mdata1.add(new WarningLights("Oil_Pressure.jpg" ,"Oil Pressure Warning Light"
-              ,"Warning alert"));
-
-
-    }
-
-
-
 
 
 

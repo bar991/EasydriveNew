@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-public class ArrayWarningLight extends ArrayAdapter<WarningLights> {
+public class  ArrayWarningLight extends ArrayAdapter<WarningLights> {
     private    Context ctx;
     private int ResourceId;
     private ArrayList<WarningLights> ary;

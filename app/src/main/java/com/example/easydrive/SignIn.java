@@ -31,14 +31,12 @@ Dal db;
     public void resetbtn(View view) {
         name.setText("");
         password.setText("");
-        Intent il=new Intent(this,MainActivitygr.class);
-        startActivity(il);}
 
+    }
 
         public void gotomainpage(View v) {
             String usr;
             String pas;
-
             usr = name.getText().toString();
             pas = password.getText().toString();
 
@@ -48,10 +46,9 @@ Dal db;
                 Toast.makeText(SignIn.this, "Password is Blank", Toast.LENGTH_LONG).show();
             } else {
 
-              //  Authenticaion
                 Boolean checkUp = db.checkUps(usr, pas);
                 if (checkUp == true) {
-                  Toast.makeText(SignIn.this, "Successful Login", Toast.LENGTH_LONG).show();
+                  Toast.makeText(SignIn.this, "Successful Login", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(SignIn.this, MainActivitygr.class);
                     startActivity(i);}
                 else Toast.makeText(SignIn.this, "Failed to Login", Toast.LENGTH_LONG).show();
